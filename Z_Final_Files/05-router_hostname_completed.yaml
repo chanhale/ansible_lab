@@ -1,0 +1,13 @@
+---
+# Modify Hostname on WAN Router
+
+- hosts: router
+  connection: ansible.netcommon.network_cli
+  gather_facts: no
+    
+  tasks:
+    - name: Modify Router Hostname
+      cisco.ios.ios_hostname:
+        config:
+          hostname:  example-wan-12
+        state: replaced  

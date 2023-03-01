@@ -1,0 +1,50 @@
+dnac_host: 198.18.129.100
+dnac_port: 443
+dnac_username: admin
+dnac_password: C1sco12345
+dnac_verify: False
+dnac_debug: True 
+site_details:
+  - type: "area"
+    site:
+      area:
+        name: "Pod 4"
+        parentName: "Global"
+  - type: "building"
+    site:
+      building:
+        name: "Pod 4 Building"
+        parentName: "Global/Pod 4"
+        address: "170 West Tasman Drive, San Jose, California 95134, United States"
+  - type: "floor"
+    site:
+      floor:
+        name: "Pod 4 Floor"
+        parentName: "Global/Pod 4/Pod 4 Building"
+        rfModel: "Cubes And Walled Offices"
+        width: "100.0"
+        length: "100.0"
+        height: "10.0" 
+site_name: "Global/Pod 4/Pod 4 Building/Pod 4 Floor"
+device_details:
+  - ip: "10.1.4.15"
+    cli_transport: "ssh"
+    snmp_rw: "private"
+    snmp_version: "v2"
+    username: "netadmin"
+    password: "C1sco12345"
+    netconf_port: "830"
+  - ip: "10.1.4.14"
+    cli_transport: "ssh"
+    snmp_rw: "private"
+    snmp_version: "v2"
+    username: "netadmin"
+    password: "C1sco12345"
+    netconf_port: "830"
+  - ip: "10.1.4.13"
+    cli_transport: "ssh"
+    snmp_rw: "private"
+    snmp_version: "v2"
+    username: "netadmin"
+    password: "C1sco12345"
+    netconf_port: "830"
