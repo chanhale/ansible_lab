@@ -1,6 +1,6 @@
 - hosts: localhost
   gather_facts: no
-  vars_files: vars/dnac_vars_pod1.yaml
+  vars_files: vars/dnac_vars_pod#.yaml
   vars:
     dnac_conn: &dnac_conn
         dnac_host: "{{dnac_host}}"
