@@ -17,7 +17,7 @@
 
     - name: Apply Initial Configuration
       cisco.ios.ios_config:
-        src: "~/ansible_lab_v1/templates/core_config.j2"
+        src: "~/ansible_lab/templates/core_config.j2"
         save_when: changed
 
     - name: Post-Run Config Collection
