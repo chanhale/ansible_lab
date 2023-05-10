@@ -1,0 +1,9 @@
+conf t
+telemetry ietf subscription 3311
+ encoding encode-kvgpb
+ filter xpath /process-cpu-ios-xe-oper:cpu-usage/cpu-utilization/five-seconds
+ source-address 10.0.0.15
+ source-vrf Mgmt-vrf
+ stream yang-push
+ update-policy periodic 500
+ receiver ip address 10.1.#.16 57500 protocol grpc-tcp
